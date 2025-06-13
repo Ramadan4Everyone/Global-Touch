@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Decor & Clean Services</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Global Touch Cleaning Services</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <h2 class="captivate">Transforming Spaces, Cleaning with Passion!</h2>
+      <p>Professional decoration and cleaning services to make your space sparkle!</p>
+      <a href="#services" class="btn">Our Services</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="cards">
+        <div class="card">
+            <img src="pngtree-yellow-small-cartoon-house-png-image_11520675.png" alt="">
+          <h3>Indoor and Exterior Decoration</h3>
+          <p>Elevate your living or workspace with our elegant decoration solutions tailored to your style.</p>
+        </div>
+        <div class="card">
+            <img src="male-janitor-properly-mopping-floor-600nw-2255715493.webp" alt="">
+          <h3>offices & Commercial Spaces</h3>
+          <p>Make your building stand out with vibrant and durable exterior decoration services.</p>
+        </div>
+        <div class="card">
+            <img src="pngtree-custodian-clipart-cleaning-man-with-a-mop-and-bucket-cartoon-vector-png-image_6807014.png" alt="">
+          <h3>Event Clean up & More</h3>
+          <p>Keep your surroundings spotless with our professional cleaning services for sides, gardens, and more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <p>Global Touch Cleaning Services has been delivering top-notch decoration and cleaning solutions for over a decade. Our team is committed to creating beautiful, clean, and inviting spaces for both residential and commercial clients.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="title">Contact Me</h2>
+      <div class="info-box">
+        <div class="contact-info">
+          <h3>My Contact</h3>
+          <p><a href="tel:+1234567890">Call us at +2148102543</a></p>
+        </div>
+        <div class="address-info">
+          <h3>Address</h3>
+          <p>9263 W,<br>centerville Houghton, NY 14744</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+  
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Global Touch Cleaning Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js">
+  // Simple smooth scrolling for navigation
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetID = this.getAttribute('href').slice(1);
+    const targetSection = document.getElementById(targetID);
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+// Animate the hero caption on load
+window.addEventListener('load', () => {
+  const caption = document.querySelector('.captivate');
+  caption.classList.add('animate');
+});
+
+
+// Trigger the animation when the page loads
+window.addEventListener('DOMContentLoaded', () => {
+  const infoBox = document.querySelector('.info-box');
+  // You can add more effects here if you like
+});
+
+
+
+</script>
+</body>
+</html>
