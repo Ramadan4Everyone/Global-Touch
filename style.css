@@ -159,6 +159,10 @@
     width: 200px;
     height: 200px;
   }
+  .icons{
+    width: 30px;
+    height: 30px;
+  }
   
   /* Title styling */
   .title {
